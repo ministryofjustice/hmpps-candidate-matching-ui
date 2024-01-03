@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import type { UserDetails } from '../../services/userService'
 
 export default {}
@@ -7,6 +8,9 @@ declare module 'express-session' {
   interface SessionData {
     returnTo: string
     nowInMinutes: number
+    data: {
+      [key: string]: any
+    }
   }
 }
 
