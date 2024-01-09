@@ -3,6 +3,10 @@
 {% set pageTitle = applicationName + " - Home" %}
 {% set mainClasses = "app-container govuk-body" %}
 
+{% block beforeContent %}
+    {{ super() }}
+{% endblock %}
+
 {% block content %}
 
   <h1>This site is under construction...</h1>
